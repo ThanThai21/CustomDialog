@@ -23,7 +23,7 @@ allprojects {
 
 ```
 dependencies {
-	        compile 'com.github.ThanThai21:CustomDialog:1.0.0'
+	        compile 'com.github.ThanThai21:CustomDialog:1.0.1'
 	}
 ```
 
