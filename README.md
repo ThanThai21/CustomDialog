@@ -49,4 +49,7 @@ customAlertDialog = new CustomAlertDialog.Builder(MainActivity.this, R.layout.di
 ```
 
 You can show or cancel this dialog using show()/cancel()
+```
+customAlertDialog.show();
+```
 
