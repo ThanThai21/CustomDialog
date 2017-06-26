@@ -18,6 +18,7 @@ allprojects {
 ```
 <br/>
 ## Step 2. Add the dependency
+
 ```
 dependencies {
 	        compile 'com.github.ThanThai21:CustomDialog:1.0.0'
