@@ -1,5 +1,5 @@
 # CustomDialog
-To simplify creating dialog with any layout
+To simplify creating dialog with your layout
 
 ![alt_text](https://github.com/ThanThai21/CustomDialog/blob/master/screenshot.PNG)
 
