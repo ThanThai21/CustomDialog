@@ -32,7 +32,7 @@ dependencies {
 # Step 2. Use it in your activity
 ```
 CustomAlertDialog customAlertDialog;
-customAlertDialog = new CustomAlertDialog.Builder(MainActivity.this, R.layout.dialog)
+CustomAlertDialog.Builder builder = new CustomAlertDialog.Builder(MainActivity.this, R.layout.dialog)
                 .titleId(R.id.title_tv, "Title")
                 .negativeButtonId(R.id.negative, "Cancel")
                 .negativeListener(new View.OnClickListener() {
@@ -47,8 +47,12 @@ customAlertDialog = new CustomAlertDialog.Builder(MainActivity.this, R.layout.di
                         customAlertDialog.cancel();
                     }
                 })
-                .positiveButtonId(R.id.positive, "OK")
-                .build();
+                .positiveButtonId(R.id.positive, "OK");
+customAlertDialog = builder.build();
+View view = builder.getView();
+        TextView textView = (TextView) view.findViewById(R.id.demo);
+        textView.setTextColor(Color.RED);
+        customAlertDialog.show();
 ```
 
 You can show or cancel this dialog using show()/cancel()
