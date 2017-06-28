@@ -9,8 +9,8 @@ import android.widget.TextView;
 
 public class CustomAlertDialog {
 
-    AlertDialog.Builder builder;
-    AlertDialog dialog;
+    private AlertDialog.Builder builder;
+    private AlertDialog dialog;
 
     public CustomAlertDialog(Builder customBuilder) {
         this.builder = customBuilder.getBuilder();
@@ -49,6 +49,7 @@ public class CustomAlertDialog {
         public Builder(Context context, int layoutResId) {
             this.context = context;
             this.layoutResId = layoutResId;
+            view = LayoutInflater.from(context).inflate(layoutResId, null);
         }
 
         public Builder titleId(int titleId, String titleStr) {
@@ -84,7 +85,6 @@ public class CustomAlertDialog {
 
         public AlertDialog.Builder getBuilder() {
             builder = new AlertDialog.Builder(context);
-            view = LayoutInflater.from(context).inflate(layoutResId, null);
             TextView title = null;
             Button negativeButton = null;
             Button positiveButton = null;
